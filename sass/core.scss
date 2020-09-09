@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Lato', 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	line-height: 1.2;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+
+.visually-hidden {
+	@include visually-hidden();
+}

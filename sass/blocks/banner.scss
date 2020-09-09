@@ -1,0 +1,75 @@
+$bgBanner: #1f1f1f;
+
+.banner {
+	background-color: $bgBanner;
+}
+
+.banner__wrap {
+	@include min-max();
+	height: 545px;
+	background: url('../img/bg-banner.jpg') center top no-repeat;
+	background-size: cover;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.banner__offer {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 82px;
+	letter-spacing: 4.1px;
+	line-height: 1;
+	font-weight: 700;
+	color: $white;
+	text-transform: uppercase;
+
+	& span {
+		display: block;
+		font-size: 40px;
+		letter-spacing: 2px;
+	}
+}
+
+.banner__description {
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 15px;
+	letter-spacing: 1.25px;
+	color: $white;
+}
+
+.banner__btn {
+	@include button();
+}
+
+@media (max-width: 1200px) {
+	.banner__wrap {
+		flex-direction: column;
+	}
+
+	.banner__offer {
+		font-size: 60px;
+		letter-spacing: 3px;
+
+		& span {
+			font-size: 30px;
+			letter-spacing: 1.5px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.banner__offer {
+		font-size: 40px;
+		letter-spacing: 2px;
+
+		& span {
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+	}
+}

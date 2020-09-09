@@ -1,0 +1,24 @@
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.socials__item {
+	padding: 10px 20px;
+}
+
+.socials__link {
+	font-size: 25px;
+	letter-spacing: 1.25px;
+	color: $white;
+	transition-duration: 500ms;
+	transition-property: color;
+
+	&:hover,
+	&:focus {
+		color: $first;
+	}
+}

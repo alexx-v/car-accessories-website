@@ -1,0 +1,21 @@
+.info {
+	color: $footerTextCol;
+	text-align: justify;
+}
+
+.info__text {
+	margin: 0;
+	padding: 0;
+}
+
+.info__title--line {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 90px;
+		height: 6px;
+		background-color: $bgElem;
+	}
+}

@@ -1,0 +1,30 @@
+.title {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.title--l {
+	font-size: 35px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	letter-spacing: 1.75px;
+	text-align: center;
+}
+
+.title--m {
+	font-size: 25px;
+	margin-bottom: 20px;
+	padding-bottom: 18px;
+	letter-spacing: 1.25px;
+}
+
+@media (max-width: 768px) {
+	.title--m {
+		font-size: 22px;
+		letter-spacing: 1.1px;
+	}
+}

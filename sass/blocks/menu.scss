@@ -1,0 +1,28 @@
+.menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+}
+
+.menu__item {
+	padding: 11px 0px 5px 40px;
+}
+
+.menu__link {
+	font-size: 15px;
+	letter-spacing: 0.75px;
+	font-weight: 700;
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-property: color;
+	transition-duration: 500ms;
+
+	&:hover,
+	&:focus {
+		color: $first;
+	}
+}

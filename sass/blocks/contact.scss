@@ -1,0 +1,86 @@
+.contact__title--line {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 90px;
+		height: 6px;
+		background-color: $bgElem;
+	}
+}
+
+.contact__wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__address {
+	position: relative;
+	margin: 0;
+	margin-bottom: 8px;
+	padding-left: 30px;
+	color: $footerTextCol;
+	letter-spacing: 0.75px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		content: '\f041';
+		font-family: FontAwesome;
+		font-size: 15px;
+		color: $bgElem;
+	}
+}
+
+.contact__phone {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 8px;
+	padding-left: 30px;
+	letter-spacing: 0.75px;
+	color: $footerTextCol;
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 500ms;
+
+	&:hover {
+		color: $bgElem;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		content: '\f10b';
+		font-family: FontAwesome;
+		font-size: 15px;
+		color: $bgElem;
+	}
+}
+
+.contact__email {
+	position: relative;
+	display: inline-block;
+	padding-left: 30px;
+	letter-spacing: 0.75px;
+	color: $footerTextCol;
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 500ms;
+
+	&:hover {
+		color: $bgElem;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		content: '\f0e0';
+		font-family: FontAwesome;
+		font-size: 15px;
+		color: $bgElem;
+	}
+}

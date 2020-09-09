@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import './blocks/header';
+@import './blocks/user-menu';
+@import './blocks/logo';
+@import './blocks/about';
+@import './blocks/user-submenu';
+@import './blocks/main-menu';
+@import './blocks/burger';
+@import './blocks/menu';
+@import './blocks/categories';
+@import './blocks/title';
+@import './blocks/featured';
+@import './blocks/banner';
+@import './blocks/footer';
+@import './blocks/navigation';
+@import './blocks/newsletter';
+@import './blocks/socials';
+@import './blocks/info';
+@import './blocks/contact';
+@import './blocks/payment';
+@import './blocks/slider';
+@import './blocks/scroll-to-top';

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>CarStore</title>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="visually-hidden">CarShop main page</h1>
+
+    <header class="header">
+      <div class="header__bg">
+        <div class="header__wrap">
+          <div class="header__top">
+            <ul class="user-menu header__user-menu" aria-label="User menu">
+              <!-- <li class="user-menu__item">
+                <a class="user-menu__link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</a>
+              </li> -->
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#"><i class="fa fa-user" aria-hidden="true"></i>My account</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Checkout</a>
+              </li>
+              <li class="user-menu__item user-menu__item--right-bd">
+                <a class="user-menu__link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
+              </li>
+            </ul>
+
+            <div class="header__search">
+              <label for="search" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></label>
+              <input id="search" type="search" name="search">
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <a class="logo header__logo">
+              <p>Car<span>Store</span></p>
+              <p>Best car seller</p>
+            </a>
+
+            <div class="about header__about">
+              <a href="tel:+1234567890" class="about__phone"><i class="fa fa-mobile" aria-hidden="true"></i>+123 456
+                7890</a>
+              <p class="about__opening-hours">Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm </p>
+            </div>
+
+            <ul class="user-submenu header__user-submenu" aria-label="Cart Menu">
+              <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Wishlist</a></li>
+              <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i>Compare</a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>My cart</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="mainMenu" class="main-menu__wrap">
+          <nav class="main-menu header__main-menu" aria-label="Main navigation">
+            <div class="main-menu__progress-wrap">
+              <div class="main-menu__bar" id="menuBar"></div>
+            </div>
+            <h2 class="visually-hidden">Main navigation</h2>
+            <ul class="menu header__menu">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Reviews</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Locations</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+            </ul>
+            <button type="button" class="burger" aria-label="Main menu toggle"><span></span></button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="categories">
+      <h2 class="visually-hidden">Categories of products</h2>
+
+      <div class="categories__wrap">
+        <div class="categories__item">
+          <a class="categories__link" href="#" aria-label="Headlights category">
+            <div class="categories__text">
+              <h3 class="categories__title">Headlights</h3>
+              <p class="categories__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="categories__img">
+              <img src="img/category-headlights.png" alt="Headlights">
+            </div>
+          </a>
+        </div>
+
+        <div class="categories__item">
+          <a class="categories__link" href="#" aria-label="Headlights category">
+            <div class="categories__text">
+              <h3 class="categories__title">Brakes</h3>
+              <p class="categories__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="categories__img">
+              <img src="img/category-brakes.png" alt="Brakes">
+            </div>
+          </a>
+        </div>
+
+        <div class="categories__item">
+          <a class="categories__link" href="#" aria-label="Headlights category">
+            <div class="categories__text">
+              <h3 class="categories__title">Wheels</h3>
+              <p class="categories__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="categories__img">
+              <img src="img/category-wheels.png" alt="Wheels">
+            </div>
+          </a>
+        </div>
+
+        <div class="categories__item">
+          <a class="categories__link" href="#" aria-label="Headlights category">
+            <div class="categories__text">
+              <h3 class="categories__title">Seats</h3>
+              <p class="categories__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="categories__img">
+              <img src="img/category-seats.png" alt="Seats">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+
+      <h2 class="title title--l featured__title--line">Featured products</h2>
+
+      <div class="slider-wrapper">
+        <div class="slider visually-hidden">
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-1.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-2.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-3.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-4.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-5.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-3.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-1.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="featured__item slider__item">
+            <a href="#" class="featured__link">
+              <p class="featured__img">
+                <img src="img/item-4.png" alt="Headlights">
+              </p>
+              <h3 class="featured__title">Headlights</h3>
+              <p class="featured__price">$300.00</p>
+              <span class="featured__rate">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h2 class="visually-hidden">Our sales</h2>
+      <div class="banner__wrap">
+
+        <div class="banner__item">
+          <p class="banner__offer">25% off <span>on orders over $999</span></p>
+          <p class="banner__description">This offer is valid on all our items</p>
+          <a class="banner__btn" href="#">Buy now</a>
+        </div>
+
+        <div class="banner__item">
+          <p class="banner__offer">25% off <span>on orders over $999</span></p>
+          <p class="banner__description">This offer is valid on all our items</p>
+          <a class="banner__btn" href="#">Buy now</a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrap">
+
+        <div class="footer__top-wrap">
+          <div class="footer__navigation-wrap">
+            <section class="navigation footer__navigation">
+              <h3 class="title title--m navigation__title--line">Quick links</h3>
+
+              <ul class="navigation__list">
+                <li class="navigation__item"><a href="#">About Us</a></li>
+                <li class="navigation__item"><a href="#">Customer Services</a></li>
+                <li class="navigation__item"><a href="#">Privacy Policy</a></li>
+                <li class="navigation__item"><a href="#">Site Map</a></li>
+                <li class="navigation__item"><a href="#">Search Terms</a></li>
+                <li class="navigation__item"><a href="#">Advanced Search</a></li>
+                <li class="navigation__item"><a href="#">Orders and Returns</a></li>
+                <li class="navigation__item"><a href="#">Contact Us</a></li>
+              </ul>
+            </section>
+
+            <section class="navigation footer__navigation">
+              <h3 class="title title--m navigation__title--line">Quick links</h3>
+
+              <ul class="navigation__list">
+                <li class="navigation__item"><a href="#">About Us</a></li>
+                <li class="navigation__item"><a href="#">Customer Services</a></li>
+                <li class="navigation__item"><a href="#">Privacy Policy</a></li>
+                <li class="navigation__item"><a href="#">Site Map</a></li>
+                <li class="navigation__item"><a href="#">Search Terms</a></li>
+                <li class="navigation__item"><a href="#">Advanced Search</a></li>
+                <li class="navigation__item"><a href="#">Orders and Returns</a></li>
+                <li class="navigation__item"><a href="#">Contact Us</a></li>
+              </ul>
+            </section>
+
+            <section class="navigation footer__navigation">
+              <h3 class="title title--m navigation__title--line">Quick links</h3>
+
+              <ul class="navigation__list">
+                <li class="navigation__item"><a href="#">About Us</a></li>
+                <li class="navigation__item"><a href="#">Customer Services</a></li>
+                <li class="navigation__item"><a href="#">Privacy Policy</a></li>
+                <li class="navigation__item"><a href="#">Site Map</a></li>
+                <li class="navigation__item"><a href="#">Search Terms</a></li>
+                <li class="navigation__item"><a href="#">Advanced Search</a></li>
+                <li class="navigation__item"><a href="#">Orders and Returns</a></li>
+                <li class="navigation__item"><a href="#">Contact Us</a></li>
+              </ul>
+            </section>
+
+          </div>
+
+          <div class="newsletter-socials__wrapper">
+
+            <div class="newsletter footer__newsletter">
+              <h3 class="title title--m newsletter__title--line">Newsletter</h3>
+              <p class="newsletetter__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <label for="subscription" aria-label="Subscribe"></label>
+              <input id="subscription" type="email">
+              <button type="button">Submit</button>
+            </div>
+
+            <ul class="socials footer__socials">
+              <li class="socials__item"><a href="#" class="socials__link" aria-label="Facebook"><i
+                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="socials__item"><a href="#" class="socials__link" aria-label="Twitter"><i class="fa fa-twitter"
+                    aria-hidden="true"></i></a></li>
+              <li class="socials__item"><a href="#" class="socials__link" aria-label="Youtube"><i class="fa fa-youtube"
+                    aria-hidden="true"></i></a></li>
+              <li class="socials__item"><a href="#" class="socials__link" aria-label="Instagram"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="socials__item"><a href="#" class="socials__link" aria-label="Pinterest"><i
+                    class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="footer__middle-wrap">
+          <div class="info footer__info">
+            <h3 class="title title--m info__title--line">Information</h3>
+            <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quo repudiandae
+              officiis molestiae
+              consequatur inventore. Aut eos magni architecto, pariatur veritatis animi adipisci nostrum repellendus
+              officiis perspiciatis nobis! Culpa, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iure,
+              quo repudiandae officiis molestiae consequatur inventore.</p>
+          </div>
+
+          <div class="info footer__info">
+            <h3 class="title title--m info__title--line">Information</h3>
+            <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quo repudiandae
+              officiis molestiae
+              consequatur inventore. Aut eos magni architecto, pariatur veritatis animi adipisci nostrum repellendus
+              officiis perspiciatis nobis! Culpa, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iure,
+              quo repudiandae officiis molestiae consequatur inventore.</p>
+          </div>
+
+          <section class="contact footer__contact">
+            <h3 class="title title--m contact__title--line">Contact</h3>
+            <div class="contact__wrap">
+              <p class="contact__address">123, Main Road, Your City,
+                NY 1234</p>
+              <a class="contact__phone" href="tel:+1234567890">+123 456
+                7890</a>
+              <a class="contact__email" href="mailto:info@psdfreebies.com">info@psdfreebies.com</a>
+            </div>
+          </section>
+
+
+        </div>
+
+        <div class="footer__bottom-wrap">
+          <div class="footer__copyright">
+            <p>CarStore &copy; 2020. All rights reserved.</p>
+          </div>
+
+          <ul class="payment footer__payment">
+            <li><a href="#" aria-label="amex"><i class="fa fa-cc-amex" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" aria-label="paypal"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="visa"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="mastercard"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <button type="button" class="scrollToTop" aria-label="Scroll to top"><i class="fa fa-angle-up"
+        aria-hidden="true"></i></button>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.payment {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	& li {
+		margin-right: 25px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		& a {
+			display: inline-block;
+			font-size: 25px;
+			color: $white;
+			line-height: 1;
+			text-decoration: none;
+			transition-duration: 500ms;
+			transition-property: color;
+
+			&:hover,
+			&:focus {
+				color: $bgElem;
+			}
+		}
+	}
+}

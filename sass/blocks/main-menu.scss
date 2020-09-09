@@ -1,0 +1,36 @@
+$bgColor: #030303;
+
+.main-menu__wrap {
+	min-height: 55px;
+	padding: 10px 0px;
+	background-color: $bgColor;
+}
+
+.main-menu {
+	position: relative;
+	@include min-max($max-width: 1200px);
+}
+
+.main-menu--sticky {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+}
+
+.main-menu__progress-wrap {
+	position: relative;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: $bgLine;
+}
+
+.main-menu__bar {
+	height: 2px;
+	background: $first;
+	width: 0%;
+}

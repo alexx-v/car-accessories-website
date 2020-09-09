@@ -1,0 +1,35 @@
+.navigation__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation__item {
+	padding-left: 5px;
+	padding-bottom: 18px;
+
+	& a {
+		color: $first;
+		text-decoration: none;
+		transition-property: color;
+		transition-duration: 500ms;
+		letter-spacing: 0.8px;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
+}
+
+.navigation__title--line {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 90px;
+		height: 6px;
+		background-color: $bgElem;
+	}
+}

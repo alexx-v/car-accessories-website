@@ -1,0 +1,89 @@
+$arrowColor: #808080;
+
+.slider-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.slider {
+	max-height: 400px;
+	position: relative;
+	min-width: 0;
+	padding: 0 40px;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.slider .slider__item {
+	text-align: center;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+.slick-slide {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 60px;
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+	background: none;
+	outline: none;
+
+	&::before {
+		position: absolute;
+		font-family: FontAwesome;
+		font-size: 100px;
+		line-height: 50px;
+		color: $arrowColor;
+		transition-duration: 500ms;
+		transition-property: color;
+	}
+
+	&:hover::before,
+	&:focus::before {
+		color: lighten($arrowColor, 10%);
+	}
+}
+
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	&::before {
+		content: '\f104';
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
+
+.slider .slick-arrow.slick-next {
+	right: -4px;
+	&::before {
+		content: '\f105';
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
+
+.slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}

@@ -1,0 +1,147 @@
+$bgFirst: #303030;
+$bgSecond: #1c1c1c;
+$textCol: #979696;
+$bgCategor: #1f1f1f;
+
+.categories {
+	background-color: $bgCategor;
+}
+
+.categories__wrap {
+	@include min-max($padding: 0);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.categories__item {
+	width: 50%;
+	background-color: $bgFirst;
+
+	&:nth-child(2),
+	&:nth-child(3) {
+		background-color: $bgSecond;
+	}
+}
+
+.categories__link {
+	display: flex;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	border: 4px solid transparent;
+	box-sizing: border-box;
+	transition-duration: 500ms;
+	transition-property: border-color;
+
+	&:hover,
+	&:focus {
+		border-color: $first;
+
+		& .categories__title {
+			color: $first;
+		}
+	}
+}
+
+.categories__text {
+	margin-right: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.categories__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 50%;
+	max-height: 200px;
+
+	& img {
+		max-height: 100%;
+	}
+}
+
+.categories__title {
+	margin: 0;
+	margin-bottom: 15px;
+
+	font-size: 35px;
+	letter-spacing: 1.75px;
+	font-weight: 700;
+	color: $white;
+
+	text-transform: uppercase;
+	transition-duration: 500ms;
+	transition-property: border-color, color;
+}
+
+.categories__description {
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: $textCol;
+}
+
+@media (max-width: 1200px) {
+	.categories__link {
+		flex-direction: column;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.categories__text {
+		margin-bottom: 50px;
+		width: 100%;
+	}
+
+	.categories__img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.categories__item {
+		width: 100%;
+
+		&:nth-child(3) {
+			background-color: $bgFirst;
+		}
+
+		&:nth-child(4) {
+			background-color: $bgSecond;
+		}
+	}
+
+	.categories__title {
+		font-size: 30px;
+		letter-spacing: 1.5px;
+	}
+
+	.categories__img {
+		max-height: 100px;
+		max-width: 200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 580px) {
+	.categories__title {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+
+	.categories__description {
+		font-size: 16px;
+		letter-spacing: 0.8px;
+	}
+}
